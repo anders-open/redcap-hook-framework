@@ -149,6 +149,20 @@ function redcap_user_rights($project_id = null) {
 	foreach (get_hook_include_files($hook_event, $project_id) as $script) include $script;
 }
 
+// redcap_pdf (REDCap >= 9.5.0)
+function redcap_pdf($project_id, $metadata, $data, $instrument = null, $record = null, $event_id = null, $instance = 1) {
+	$hook_event = __FUNCTION__;
+	foreach (get_hook_include_files($hook_event, $project_id) as $script) include $script;
+}
+
+// redcap_email
+function redcap_email($to, $from, $subject, $message, $cc = null, $bcc = null, $fromName = null, $attachments = null) {
+	$hook_event = __FUNCTION__;
+	foreach (get_hook_include_files($hook_event) as $script) include $script;
+}
+
+
+
 // INSERT ADDITONAL HOOKS HERE AS THEY ARE DEVELOPED HERE
 
 
