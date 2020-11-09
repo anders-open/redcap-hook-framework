@@ -1,5 +1,6 @@
 # REDCap-Hooks
 This is a framework for deploying hooks in REDCap on a global or per-project basis.
+Forked from https://github.com/123andy/redcap-hook-framework ( Developed by Andy Martin, not longer maintaied on his side )
 
 This code is covered by a standard GPL license which means you can't hold me liable :-)  In other words, it is YOUR responsiblity to ensure that the use of this code or any modifications to it meet your institutional security guidelines.  Some of the code in this repository is intended as example code for learning REDCap and not necessarily as production-ready code.  In other words, use at your own risk.  Please also leave attribution to this repository in the code and push back and updates and enhancements.
 
